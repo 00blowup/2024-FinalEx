@@ -19,6 +19,9 @@ export default function Index() {
             <Button title = "Time Limited Button"
                 onPress = { function() { router.navigate('timedclick') } }
             />
+            <Button title = "Time Limited Click Count"
+                onPress = { function() { router.navigate('timedclickcnt') } }
+            />
             <View style = {{height: 10}}></View>
         </View>
     );
