@@ -16,6 +16,9 @@ export default function Index() {
             <Button title = "Activating Buttons"
                 onPress = { function() { router.navigate('btnactivate') } }
             />
+            <Button title = "Time Limited Button"
+                onPress = { function() { router.navigate('timedclick') } }
+            />
             <View style = {{height: 10}}></View>
         </View>
     );

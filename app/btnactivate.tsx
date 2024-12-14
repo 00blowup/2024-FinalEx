@@ -7,7 +7,7 @@ export default function App() {
 
     return (
         <View style = {styles.container}>
-            <Button title = "Click Change the State of the Button Below" onPress = {() => setStartClicked((prev) => !prev)} />
+            <Button title = "Click to Change the State of the Button Below" onPress = {() => setStartClicked((prev) => !prev)} />
             {startClicked ?
                 (<TouchableOpacity style = {styles.activeBtn} onPress = {() => setBtnClicked(true)}>
                     <Text style = {{color: 'white'}}>Active</Text>
