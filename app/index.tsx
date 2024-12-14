@@ -13,6 +13,9 @@ export default function Index() {
             <Button title = "Click Count"
                 onPress = { function() { router.navigate('clickcount') } }
             />
+            <Button title = "Activating Buttons"
+                onPress = { function() { router.navigate('btnactivate') } }
+            />
             <View style = {{height: 10}}></View>
         </View>
     );
