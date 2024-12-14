@@ -1,15 +1,16 @@
-import { Text, View } from "react-native";
+import { Text, View, Button } from "react-native";
+import { router } from "expo-router";
+
+var text_st = {fontSize: 20, margin: 10};
 
 export default function Index() {
-  return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>Edit app/index.tsx to edit this screen.</Text>
-    </View>
-  );
+    return (
+        <View>
+            <Text style = {text_st}>Home Screen</Text>
+            <Button title = "Timer"
+                onPress = { function() { router.navigate('timer') } }
+            />
+            <View style = {{height: 10}}></View>
+        </View>
+    );
 }
