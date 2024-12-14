@@ -10,6 +10,9 @@ export default function Index() {
             <Button title = "Timer"
                 onPress = { function() { router.navigate('timer') } }
             />
+            <Button title = "Click Count"
+                onPress = { function() { router.navigate('clickcount') } }
+            />
             <View style = {{height: 10}}></View>
         </View>
     );

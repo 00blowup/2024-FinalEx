@@ -28,7 +28,7 @@ export default function App() {
             <Button title = "Stop timer" onPress = {stopTimer} />
             <Text>{timerDate.getMinutes()}:{timerDate.getSeconds()}</Text>
         </View>
-    )
+    );
 }
 
 const styles = StyleSheet.create({
